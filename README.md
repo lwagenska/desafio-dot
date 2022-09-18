@@ -1,0 +1,2 @@
+# desafio-dot
+DOT - DESAFIO TÉCNICO QA AUTOMATION

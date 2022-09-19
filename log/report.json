@@ -1,0 +1,438 @@
+[
+  {
+    "id": "carrinho-de-compras",
+    "uri": "features/carrinho.feature",
+    "keyword": "Funcionalidade",
+    "name": "Carrinho de Compras",
+    "description": "    Para que eu possa visualizar todos os produtos selecionados\n    Sendo um usuário não cadastrado\n    Posso ter um carrinho de compras que exiba todos os produtos que selecionei",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@cart",
+        "line": 3
+      }
+    ],
+    "elements": [
+      {
+        "id": "carrinho-de-compras;adicionar-um-produto-no-carrinho",
+        "keyword": "Cenário",
+        "name": "Adicionar um produto no carrinho",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou no site da DemoBlaze",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1004185400
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "adiciono o produto \"Samsung galaxy s6\" ao carrinho",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4619596900
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo visualizar o mesmo no carrinho de compras",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1051480100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 3
+          },
+          {
+            "name": "@add_product",
+            "line": 9
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47500
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1486723300
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168939800
+            }
+          }
+        ]
+      },
+      {
+        "id": "carrinho-de-compras;adicionar-mais-de-um-produto-no-carrinho",
+        "keyword": "Cenário",
+        "name": "Adicionar mais de um produto no carrinho",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou no site da DemoBlaze",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77384000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "adiciono os produtos \"Samsung galaxy s7\" e \"Sony xperia z5\" ao carrinho",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8622330900
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo visualizar os mesmos no carrinho de compras",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1267778100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 3
+          },
+          {
+            "name": "@add_products",
+            "line": 15
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 244915100
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153025200
+            }
+          }
+        ]
+      },
+      {
+        "id": "carrinho-de-compras;deletar-um-produto-no-carrinho",
+        "keyword": "Cenário",
+        "name": "Deletar um produto no carrinho",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou no carrinho de compras com o produto \"Samsung galaxy s6\"",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5298997500
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "deleto o produto",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135446300
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "não devo mais visualizar o mesmo no carrinho",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 753998000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 3
+          },
+          {
+            "name": "@delete_product",
+            "line": 21
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 244551600
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 197618200
+            }
+          }
+        ]
+      },
+      {
+        "id": "carrinho-de-compras;deletar-todos-os-produtos-no-carrinho",
+        "keyword": "Cenário",
+        "name": "Deletar todos os produtos no carrinho",
+        "description": "",
+        "line": 28,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou no carrinho de compras com o produto \"Samsung galaxy s7\" e \"Sony xperia z5\"",
+            "line": 29,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9567556600
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "deleto todos os produtos",
+            "line": 30,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3317097500
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "não devo mais visualizar nenhum produto no carrinho",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/carrinho_steps.rb:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 555215400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 3
+          },
+          {
+            "name": "@delete_all_products",
+            "line": 27
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20700
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22300
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 242203000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183986100
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

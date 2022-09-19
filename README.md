@@ -1,3 +1,6 @@
+## DOT - DESAFIO TÉCNICO QA AUTOMATION
+Considerando uma plataforma com e-commerce integrado (por exemplo: Americanas, Ponto Frio, Extra, Amazon, DemoBlaze, Demo OpenCart, Udemy, Hotmart, entre outros...) escolha um como alvo e crie testes considerando principalmente o cenário da funcionalidade "Carrinho de Compras". Em seguida, desenvolva os scripts de automação (na linguagem que preferir, comentários no código e/ou markdown são bem-vindos) dos casos de teste que levantou e então disponibilize no campo abaixo o link público do repositório dos seus scripts para nossa avaliação, por exemplo, GitHub ou GitLab. Tenha certeza que o código fique disponível e acessível até que receba o nosso retorno. E vale lembrar: capriche e ouse.
+
 ## Instalando o Ruby
 
 1. Baixar instalador
